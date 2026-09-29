@@ -1,0 +1,163 @@
+.library-page {
+  min-height: 100vh;
+  background: #f4f1ea;
+  font-family: Arial, sans-serif;
+  color: #2f3e35;
+}
+
+.library-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 7%;
+  background: white;
+  border-bottom: 1px solid #e5e1d8;
+}
+
+.library-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.library-header p {
+  margin: 8px 0 0;
+  color: #777;
+}
+
+.add-book-button {
+  background: #3f5d4a;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-book-button:hover {
+  background: #314b3b;
+}
+
+.library-content {
+  width: 86%;
+  max-width: 1200px;
+  margin: 35px auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.search-input:focus {
+  border-color: #6b7d6d;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.book-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.book-icon {
+  font-size: 35px;
+}
+
+.book-card h3 {
+  margin: 15px 0 6px;
+  font-size: 20px;
+}
+
+.book-author {
+  margin: 0;
+  color: #666;
+}
+
+.book-category {
+  display: inline-block;
+  margin: 14px 0;
+  padding: 5px 10px;
+  background: #eeeae1;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status {
+  display: block;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.available {
+  background: #e3f0e6;
+  color: #356044;
+}
+
+.issued {
+  background: #f5e2df;
+  color: #8a4037;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.book-actions button {
+  flex: 1;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.book-actions button:hover {
+  background: #f4f1ea;
+}
+
+.book-form {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.book-form input,
+.book-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.book-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #3f5d4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
